@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(173, 167, 167);
+        }
+        html {
+        scroll-behavior: smooth;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(173, 167, 167);
+    }
+
+    /* Center all content on mobile devices */
+    @media (max-width: 768px) {
+        .navbar .container, .container, .row {
+            text-align: center;
+        }
+
+        /* Center images and buttons */
+        .image1 {
+            margin: 0 auto; /* Center the image horizontally */
+        }
+
+        .col-sm-5, .col-sm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .row.g-2, .row.g-0, .row.g-1 {
+            justify-content: center;
+        }
+
+        /* Adjust spacing */
+        .mt-5 {
+            margin-top: 2rem;
+        }
+
+        .ms-5, .ms-auto {
+            margin-left: 0 !important;
+        }
+
+        .ps-5 {
+            padding-left: 0 !important;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Nicole Dizon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: small;" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: small;" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: small;" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-size: small;" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="home">
+        <div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-sm ms-5">
+            <img class="rounded-circle image1 mt-3 ms-5" style="height: 312px; width:300px ;" src="./myimage.jpg" alt="myimage">
+        </div>
+        <div class="col-sm-5 mt-5 ms-5">
+            <h4 class="text-secondary fw-bold">Hello I'm</h4>
+            <h1 class="text-dark fw-bold">Princess Nicole Dizon</h1>
+            <p class="text-secondary fw-bold">I'm eager to learn more programming skills as long as i can.</p>
+            <div class="row g-2">
+                <div class="col-sm-auto">
+            <a style="border: 1px solid #000;" href="./Princess Nicole Dizon (4).pdf" download="Princess Nicole Dizon (4).pdf" class="btn rounded-pill">Download CV</a>
+                </div>
+                <div class="col-sm-auto">
+            <a href="#contact" class="btn btn-dark text-light rounded-pill" style="border: 1px solid #000;" >Contact Info</a>
+                </div>
+            </div>
+            <div class="row g-2 d-flex mt-3 ms-5 ps-5">
+                <div class="col-sm-auto">
+            <span class="fab fa-facebook" style="font-size: 25px;"></span>
+                </div>
+                <div class="col-sm-auto">
+            <span class="fab fa-github"style="font-size: 25px;" ></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <section id="about">
+        <div class="container mt-5">
+            <h4 class="text-center text-secondary fw-bold">Get to Know me more.</h4>
+            <h1 class="text-center text-dark fw-bold mt-3">About Me</h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm ms-2 me-3">
+                    <img class="rounded-circle mt-4" style="height: 300px; width: 300px;" src="./myimage.jpg" alt="image2">
+                </div>
+                <div class="col-sm me-3 mt-3 bg-light rounded-4">
+                    <h4 class="text-center m-2"><i class="fas fa-medal"></i>Skills</h4>
+                <div class="row g-0">
+                    <div class="col text-center">
+                    <p>Computer Literate</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>SQL</p>
+                    <p>Excel</p>
+                    </div>
+                    <div class="col">
+                    <p>Organizational</p>
+                    <p>Analyzational</p>
+                    <p>Detail-Oriented</p>
+                    <p>Memorization</p>
+                    <p>Critical Thinking</p>
+                    <p>Problem Solving</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-sm ms-2 mt-3 rounded-4 bg-light">
+                    <h4 class="text-center m-2"><i class="fas fa-graduation-cap"></i>Education</h4>
+                    <p class="m-5">Cavite State University - Bacoor City Campus</p>
+                    <p class="m-5"> with a Course of Bachelor's of Science in Computer Science</p>
+                </div>
+                <p class="m-4 text-center justify-content bg-light-subtle rounded-4">As a third-year Bachelor of Science in Computer Science student, I am seeking a job position in front-end web development to apply and expand my skills in HTML, CSS, and JavaScript. I bring strong computer literacy, a foundational knowledge of PHP, Python, SQL, and Java, and a keen ability to analyze and solve problems. My communication, organizational, and memorization skills, coupled with my detail-oriented and adaptable nature, equip me to contribute effectively to dynamic development teams and projects.</p>
+        </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h4 class="text-center text-secondary fw-bold mt-3">Explore My</h4>
+            <h1 class="text-center text-dark fw-bold mb-3">Skills</h1>
+        <div class="container mb-5 mt-5 bg-light rounded-4">
+            <div class="row">
+                <div class="col">
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Computer Literate</strong></h5>
+                    <p>Experienced</p>
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>HTML</strong></h5>
+                    <p>Skilled</p>
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>CSS</strong></h5>
+                    <p>Experienced</p>
+                </div>
+                <div class="col">
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>SQL</strong></h5>
+                    <p>Skilled</p>
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Excel</strong></h5>
+                    <p>Experienced</p>
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Organizational</strong></h5>
+                    <p>Skilled</p>
+                </div>
+                <div class="col">
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Analyzational</strong></h5>
+                    <p>Skilled</p>
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Detail-Oriented</strong></h5>
+                    <p>Skilled</p>
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Memorization</strong></h5>
+                    <p>Skilled</p>
+                </div>
+                <div class="col">
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Critical Thinking</strong></h5>
+                    <p>Experienced</p>
+                    <h5 class="text-dark mt-5"><i class="fas fa-check-circle"></i><strong>Problem Solving</strong></h5>
+                    <p>Experienced</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+        <h4 class="text-secondary fw-bold text-center mt-5">Browse My</h4>
+        <h1 class="text-dark fw-bold text-center">Projects</h1>
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-sm-4">
+                    <img style="height: auto; width: auto;" src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-project-management-png-image_5687733.png" alt="project1">
+                    <div class="row g-1 ms-5 ps-3">
+                        <div class="col-sm-auto">
+                    <button class="btn btn-dark rounded-pill" onclick="location.href='https://nicoledizon11.github.io/NICOLE/'" style="border: 1px solid #000;">Project 1</button>
+                        </div>
+                        <div class="col-sm-auto">
+                    <button class="btn text-light rounded-pill" onclick="location.href='https://github.com'" style="border: 1px solid #000;" >Github</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img style="height: auto; width: auto;" src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-project-management-png-image_5687733.png" alt="project1">
+                    <div class="row g-1 ms-5 ps-3">
+                        <div class="col-sm-auto">
+                    <button class="btn btn-dark rounded-pill" onclick="location.href='https://nicoledizon11.github.io/NICOLE/'" style="border: 1px solid #000;">Project 2</button>
+                        </div>
+                        <div class="col-sm-auto">
+                    <button class="btn text-light rounded-pill" onclick="location.href='https://github.com'" style="border: 1px solid #000;" >Github</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <img style="height: auto; width: auto;" src="https://png.pngtree.com/png-vector/20220706/ourmid/pngtree-project-management-png-image_5687733.png" alt="project1">
+                    <div class="row g-2 ms-5 ps-3">
+                        <div class="col-sm-auto">
+                    <button class="btn btn-dark rounded-pill" href="#" style="border: 1px solid #000;">Project 3</button>
+                        </div>
+                        <div class="col-sm-auto">
+                    <button class="btn text-light rounded-pill" href="#" style="border: 1px solid #000;" >Github</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h4 class="text-secondary fw-bold text-center mt-5">Get in Touch </h4>
+        <h1 class="text-dark fw-bold text-center">Contact Me</h1>
+        <div class="container mt-5 text-center">
+            <div class="row g-2">
+            <div class="col-sm">
+            <i class="fab fa-facebook"></i><br><br>
+            <a class="text-dark fw-bold" href="https://www.facebook.com/nicole.dizon.1428">Facebook</a>
+            </div>
+            <div class="col-sm">
+            <i class="fab fa-twitter"></i><br><br>
+            <a class="text-dark fw-bold" href="https://x.com/NicoleDZN117">Twitter</a>
+            </div>
+            <div class="col-sm">
+            <i class="fab fa-instagram"></i><br><br>
+            <a class="text-dark fw-bold" href="https://www.instagram.com/nicole_dzn/">Instagram</a>
+            </div>
+            <div class="row g-2">
+            <div class="col-sm">
+            <i class="fab fa-github"></i><br><br>
+            <a class="text-dark fw-bold" href="https://github.com/NicoleDizon11">Github</a>
+            </div>
+            <div class="col-sm">
+            <i class="fas fa-envelope"></i><br><br>
+            <a class="text-dark fw-bold" href="nicolecunanan417@gmail.com">Email</a>
+            </div>
+            <div class="col-sm">
+            <i class="fas fa-phone"></i><br><br>
+            <a class="text-dark fw-bold" href="09558063780">Phone</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+</body>
+</html>
